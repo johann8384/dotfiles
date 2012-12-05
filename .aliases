@@ -6,6 +6,12 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# Editor
+alias edit=$EDITOR
+
+# Pretty Print Json
+alias pp='python -mjson.tool'
+
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
@@ -19,6 +25,10 @@ alias m="mate ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+
+#replace SSH with remote Screen
+alias ssh="~/bin/remote_screen"
+alias rssh="/usr/bin/ssh"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

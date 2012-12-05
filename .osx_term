@@ -1,0 +1,2 @@
+#Configure Backspace Key
+defaults write com.apple.Safari NSUserKeyEquivalents -dict-add Back "\U232b"
