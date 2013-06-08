@@ -25,6 +25,7 @@
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [user]
         name = Jonathan Creasy
@@ -80,5 +81,3 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
-[push]
-	default = simple
